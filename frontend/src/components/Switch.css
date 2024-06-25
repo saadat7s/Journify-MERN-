@@ -1,0 +1,129 @@
+.toggleBG input {
+    opacity: 0;
+  }
+  
+  .toggleBG {
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 50px;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.4), inset 0px -1px 4px rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    background-color: #ebeeec;
+  }
+  
+  .circle {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+  
+  
+  }
+  
+  .circle::before {
+    transition: 0.3s;
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    /* background-color: #203a4300; */
+    box-shadow: 5px 50px 0 0 #f8b65a;
+    top: -49px;
+    left: -5px;
+    border-radius: 20px;
+  }
+  
+  .toggleBG input:checked+.circle::before {
+    transform: translateX(20px);
+    box-shadow: 7px 5px 0 0 #636363;
+    top: -4px;
+    left: -5px;
+  }
+  
+  .moon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 9px 9px 0 0 #333;
+    margin-left: -25px;
+    margin-top: -25px;
+  }
+  
+  
+  .darkMode {
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 40px;
+    transition: 0.5;
+  }
+  
+  /* ---------------------- */
+  
+  
+  /* Toggle Theme V2 */
+  .toggleBg input {
+    opacity: 0;
+  }
+  
+  .toggleBg {
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 60px;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.4), inset 0px -1px 4px rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    background-color: #ebeeec;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .selector {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+  }
+  
+  .switch {
+    position: absolute;
+    background-color: #203A43;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    left: 0;
+    transition: 0.4s ease-out;
+  }
+  
+  .Sun {
+    padding: 5px 14px 0px 4px;
+    transition: 0.5s ease-out;
+  }
+  
+  .Moon {
+    position: relative;
+    color: #203A43;
+    transition: 0.4s ease-out;
+    top: 30px;
+  }
+  
+  .toggleBg input:checked+.switch {
+    background-color: #27374D;
+    left: 30px;
+  }
+  
+  .toggleBg input:checked~.selector .Moon {
+    color: white;
+    top: 0px;
+  }
+  
+  .toggleBg input:checked~.selector .Sun {
+    transform: translateY(30px);
+  }
+  
+  /* --------------------------- */

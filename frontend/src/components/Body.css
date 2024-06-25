@@ -1,0 +1,88 @@
+/* Add a transition effect to smoothly animate the width change */
+.sidebar-hover {
+  transition: width 0.3s ease;
+}
+
+/* Set the initial width of the sidebar */
+.sidebar-hover.collapsed {
+  width: 40px;
+}
+
+/* Set the expanded width of the sidebar */
+.sidebar-hover.expanded {
+  width: 200px;
+}
+
+
+.body{
+background-color: #5e5e5e;
+min-height: 100%;
+height: 100%;
+}
+.elementsRow{
+height: 85vh;
+}
+
+/* Body.css */
+
+/* Card styling */
+.card {
+background-color: #fff;
+border: 1px solid #dfe1e6;
+border-radius: 8px;
+box-shadow: 0 1px 0 rgba(9,30,66,.25);
+transition: transform 0.15s ease-in-out;
+width: max-content;
+}
+
+/* Hover effect on the card */
+.card:hover {
+transform: scale(1.05);
+}
+
+/* Card title styling */
+.card-title {
+font-size: 16px;
+font-weight: 700;
+margin-bottom: 8px;
+color: #172b4d;
+}
+
+/* Card content styling */
+.card-content {
+font-size: 14px;
+color: #5e6c84;
+}
+
+/* Card buttons styling */
+.card-buttons {
+margin-top: 12px;
+}
+
+/* Update button styling with Font Awesome icon */
+.btn-primary {
+background-color: #5aac44;
+color: #fff;
+}
+
+/* Delete button styling with Font Awesome icon */
+.btn-danger {
+background-color: #cf513d;
+color: #fff;
+}
+
+/* Close Details button styling with Font Awesome icon */
+.btn-secondary {
+background-color: #0079bf;
+color: #fff;
+}
+
+/* Font Awesome icons for buttons */
+.btn i {
+margin-right: 5px;
+}
+
+/* Additional styling for Font Awesome icons */
+.fa {
+font-size: 14px;
+}
